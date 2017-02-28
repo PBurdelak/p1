@@ -1,1 +1,2 @@
-a = 1jj
+import nltk
+nltk.download_gui()
