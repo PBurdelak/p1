@@ -72,3 +72,7 @@ def tokenize(text):
     #każdy element listy musi być zgodny ze wzorcem p
     #długość elementu musi być większa niż min_length
     filtered_tokens = list(filter(lambda token: p.match(token) and len(token)>=min_length, tokens));
+
+pang sentiments set
+http://www.cs.cornell.edu/people/pabo/movie-review-data/
+polarity dataset v2.0 ( 3.0Mb) (includes README v2.0): 1000 positive and 1000 negative processed reviews. Introduced in Pang/Lee ACL 2004. Released June 2004.
