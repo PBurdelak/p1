@@ -1,4 +1,20 @@
+from sklearn  import  svm
 import matplotlib.pyplot as plt
+
+def classify(X):
+    Xs= []
+    ys= []
+    for [x,y,c] in X:
+        if c == 1 or c==0:
+            Xs.append([x,y])
+            ys.append(c)
+    clf = svm.SVC()
+    clf.fit(Xs,ys)
+    for i in range(len(X)):
+        if X[i][2] == -1:
+            X[i][2] = clf.predict([X[i][0],X[i][1]])
+    return X
+
 
 def load_data(filename):
     X = []
@@ -34,5 +50,5 @@ def draw_data(X):
 
     plt.show()
 
-
 draw_data(load_data('train'))
+draw_data(classify(load_data('train')))
