@@ -49,6 +49,3 @@ def draw_data(X):
     plt.plot(x0,y0,'ro',color='yellow')
 
     plt.show()
-
-draw_data(load_data('train'))
-draw_data(classify(load_data('train')))

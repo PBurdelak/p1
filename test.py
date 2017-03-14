@@ -40,5 +40,3 @@ def main():
     for doc in test_docs:
         print(feature_values(doc, representer))
 
-main()
-
