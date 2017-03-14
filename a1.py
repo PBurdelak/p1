@@ -84,6 +84,6 @@ class document:
             vector[inverse_vocabulary[word]] = 1
         return vector
 
-crp = corpus("C:\\Users\\s0152854\\Downloads\\txt_sentoken\\neg","C:\\Users\\s0152854\\Downloads\\txt_sentoken\\pos")
+crp = corpus("C:\\Users\\s0152854\\Downloads\\txt_sentoken\\pos","C:\\Users\\s0152854\\Downloads\\txt_sentoken\\neg")
 crp.initialize_vocalbulary()
 print(crp.vocabulary)
